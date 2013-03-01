@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<script type='text/javascript' src='funciones.js'></script>
+<style>
+    input {
+    margin-top: 10px; margin-right: 10px;}
+
+    #resultadoci{color:#424242;  font-size: 75%; text-decoration: underline;}
+
+    #resultadofecha{color:#424242; font-size: 75%; text-decoration: underline;}
+
+    #resultadocorreo{color:#424242; font-size: 75%; text-decoration: underline;}
+</style>
+<script>
+
+    function verificarCI(caja){
+
+        if(!esCI(caja.value) ){
+
+            document.getElementById("resultadoci").innerHTML="cedula no valida, debe escribirse x.xxx.xxx-x";
+        }
+
+        else{
+
+             document.getElementById("resultadoci").innerHTML="cedula valida";
+             
+        }
+
+    }
+function verificarFecha(caja){
+
+      if(!esFecha(caja.value) ){
+
+            document.getElementById("resultadofecha").innerHTML="fecha no valida, debe escribirse xx/xx/xxxx";
+          
+   }
+
+        else{
+
+             document.getElementById("resultadofecha").innerHTML="Fecha valida";
+        }
+
+
+}
+
+function verificarCorreo(correo){
+    if(!esCorreo(correo.value)){
+        document.getElementById("resultadocorreo").innerHTML="correo invalido, debe escribirse xx@xx.xx";
+
+    }
+    else{
+
+       document.getElementById("resultadocorreo").innerHTML="correo valido";
+    }
+}
+
+</script>
+</head>
+
+<body>
+    <form>
+    
+        Ingrese Fecha <input type="text" id="fecha" name="fecha" onBlur="verificarFecha(this)"/><span id="resultadofecha"></span><br/>
+
+        Ingrese CI   <input type="text" id="cedula" name="cedula" onBlur="verificarCI(this)"/><span id="resultadoci"></span><br/>
+
+        Ingrese Correo<input type="text" id="correo" name="correo" onBlur="verificarCorreo(this)"/><span id="resultadocorreo"></span><br/>
+        
+        <input type="button" value="Validar"/>
+
+    
+    </form>
+
+</body>
+</html>
