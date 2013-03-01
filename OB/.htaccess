@@ -1,0 +1,53 @@
+<IfModule mod_headers.c>
+  Header set X-UA-Compatible "IE=Edge,chrome=1"
+  # mod_headers can't match by content-type, but we don't want to send this header on *everything*...
+  <FilesMatch "\.(js|css|gif|png|jpe?g|pdf|xml|oga|ogg|m4a|ogv|mp4|m4v|webm|svg|svgz|eot|ttf|otf|woff|ico|webp|appcache|manifest|htc|crx|oex|xpi|safariextz|vcf)$" >
+    Header unset X-UA-Compatible
+  </FilesMatch>
+</IfModule>
+
+# ==========================================================================
+# Compression
+# ==========================================================================
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/html
+	AddOutputFilterByType DEFLATE text/plain
+	AddOutputFilterByType DEFLATE text/xml
+	AddOutputFilterByType DEFLATE text/css
+	AddOutputFilterByType DEFLATE text/javascript
+	AddOutputFilterByType DEFLATE application/javascript
+	AddOutputFilterByType DEFLATE text/x-js
+	AddOutputFilterByType DEFLATE application/rss+xml
+	BrowserMatch ^Mozilla/4 gzip-only-text/html
+	BrowserMatch ^Mozilla/4\.0[678] no-gzip
+	BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+
+# ==========================================================================
+# Expiration for static resources
+# ==========================================================================
+ <IfModule mod_expires.c>
+	ExpiresActive On
+	<FilesMatch "\.(gif|jpe?g|png|js|css)$">
+		ExpiresDefault "access plus 1 month"
+	</FilesMatch>
+</IfModule>
+
+ <IfModule mod_rewrite.c>
+	Options +FollowSymlinks
+	RewriteEngine On
+	RewriteBase /
+	RewriteCond %{HTTP_HOST} !acodike.seophp.com.uy [NC]
+	RewriteRule (.*) http://acodike.seophp.com.uy$1 [L,R=301,QSA]
+	
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME}\.php -f
+	RewriteRule ^(.*)$ $1.php
+	
+
+
+	
+</IfModule>
+
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
