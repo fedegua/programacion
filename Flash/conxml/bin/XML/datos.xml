@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tabla>
+	<cabezales>
+		<cabezal>Nombre</cabezal>
+		<cabezal>Segundo Nombre</cabezal>
+		<cabezal>Edad</cabezal>
+	</cabezales>
+	<personas>
+		<persona edad="22">
+			<nombres>
+				<primerNombre>Santiago</primerNombre>
+				<segundoNombre>Juan</segundoNombre>
+			</nombres>
+		</persona>
+		<persona edad="23">
+			<nombres>
+				<primerNombre>Fernando</primerNombre>
+				<segundoNombre>Pablo</segundoNombre>
+			</nombres>
+		</persona>
+		<persona edad="25">
+			<nombres>
+				<primerNombre>Federico</primerNombre>
+				<segundoNombre>Roque</segundoNombre>
+			</nombres>
+		</persona>
+	</personas>
+</tabla>

@@ -1,0 +1,27 @@
+{% extends "main/base_front.html" %}
+{% block body %}
+	
+<div align="center"> <h1> Ingrese PIN enviado a su telefono</h1> </div>
+<form id="form1" name="form1" method="post" action="/usuario/pin/">
+{% csrf_token %}
+{# Incluir hidden fields #}
+    {% for hidden in form2.hidden_fields %}
+    {{ hidden }}
+    {% endfor %}
+	<div align="center">
+	 {% if form2.non_field_errors %}
+        {% for error in form2.non_field_errors %}
+           <p>{{error}} </p>
+        {% endfor %}   
+     {% endif %}     
+    
+    {% if form2.pin.errors %}
+        {% for error in form2.pin.errors %}
+           <p> {{error}} </p>
+        {% endfor %}   
+     {% endif %}     
+    <label> Pin: {{form2.pin_field}}</label>
+    <input type="submit" name="button" id="button" value="Enviar" />
+    </div>
+</form>
+{% endblock %}

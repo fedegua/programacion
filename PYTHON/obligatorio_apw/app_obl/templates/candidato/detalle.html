@@ -1,0 +1,43 @@
+{% extends "main/base_front.html" %}
+
+{% block body %}
+	{{ block.super }} 
+	<table id="cont" width="48%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="32%">Nombre:</td>
+    <td width="68%">{{candidato.nombre}}</td>
+  </tr>
+  <tr>
+    <td>Apellido:</td>
+    <td>{{candidato.apellido}}</td>
+  </tr>
+  <tr>
+    <td>Fecha nacimiento:</td>
+    <td>{{candidato.fechaNac}}</td> 
+  </tr>
+  <tr>
+    <td>Documento:</td>
+    <td>{{candidato.documento}}</td>
+  </tr>
+  <tr>
+    <td>Direcci&oacute;n:</td>
+    <td>{{candidato.direccion}}</td>
+  </tr>
+  <tr>
+    <td>Tel&eacute;fono:</td>
+    <td>{{candidato.telefono}}</td>
+  </tr>
+  <tr>
+    <td>Ciudad:</td>
+    <td>{{candidato.ciudad.nombre}}</td>
+  </tr>
+  <tr>
+    <td>Informaci&oacute;n:</td>
+    <td>{{candidato.informacion}}</td>
+  </tr>
+  <tr>
+    <td><h1>Com&aacute;ndo:</h1></td>
+    <td><h1>{{candidato.candidatocomando.ciudadComando.nombre}} {{candidato.candidatocomando.nombre}} </h1></td>
+  </tr>
+</table>
+{% endblock %}

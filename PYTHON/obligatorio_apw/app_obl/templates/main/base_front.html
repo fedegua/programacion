@@ -1,0 +1,13 @@
+{% extends 'main/base.html' %}
+<title>{% block titulo %}Desarrollo de app webs front end {% endblock %}</title>
+<link rel="stylesheet" href="{{ STATIC_URL }}static/base.css" />
+{% block body %}
+	{% block nav %}
+		<div id="nav" align="center">{% include 'main/nav.html' %} </div>
+        {% if request.user.is_authenticated %}
+        	<div id="log" align="right">
+            	{% include 'main/login_info.html' %} 
+            </div> 
+        {%endif%}
+	{% endblock %}
+{% endblock %}

@@ -1,0 +1,6 @@
+<form id = 'form1' method = "post" action="{{request.path}}"
+{%csrf_token%}
+Buscar: <input type = "text" name = "search" value="{{search}}" />
+<input type = "submit" value= "Buscar" />
+</form>
+{% if search %} Resultado de buscar <strong> {{search}}</strong>{% endif %}

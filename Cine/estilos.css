@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0px; padding:0px;}
+body{ background-image:url(imagenes/fondo.jpg);
+		background-repeat: repeat-x;
+		background-color:#0c4b52
+	}
+#contenedor_gral{ width:600px;
+				margin:0px auto;}
+				
+#cabezal{ background-image:url(imagenes/cabezal.png);
+			background-repeat:no-repeat; 
+			background-position:center;
+			width:600px;
+			height:126px; margin:10px auto}
+			
+#menu {	
+		height:30px;
+		margin-top:65px;
+}
+
+#menu ul li {float:left; 
+			height:26px;
+			list-style:none; 
+			background-image:url(menu.gif);
+			padding-top:2px;
+			margin-left:20px;}
+#menu ul li a { font-family:Georgia, "Times New Roman", Times, serif;
+				font-size:18px;
+				font-style:italic;
+				color: #aec68e;
+				text-decoration:none;
+				font-weight:bold;}
+#menu ul li a:hover { font-family:Georgia, "Times New Roman", Times, serif;
+				font-size:18px;
+				font-style:italic;
+				color: #FC6;
+				text-decoration:none;
+				font-weight:bold;}
+#menu ul li.activo a{ font-family:Georgia, "Times New Roman", Times, serif;
+				font-size:18px;
+				font-style:italic;
+				color: #FFF;
+				text-decoration:none;
+				font-weight:bold;}
+				
+#redondeado_sup{ width:600px;
+				height:30px;
+				background-image: url(imagenes/fondo1a.png);
+				background-repeat:no-repeat;
+				margin-top:30px;}
+#contenido { width:600px; 
+			background-image:url(imagenes/fondo1b.png);
+			background-repeat:repeat-y;
+			padding-top:25px;
+			padding-bottom:10px;
+			}
+#contenido h4 { color:#FC3;
+				font-family:Georgia, "Times New Roman",Times, serif;
+				margin:20px 20px;
+				margin-bottom:5px;
+				margin-top:0px;
+				padding:0px;
+				padding-bottom:10px;
+				border-bottom:solid 1px #FF6}
+#contenido p {
+	color: #FFF;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:10px;
+	margin:20px;
+	margin-top:10px;
+				
+				}
+
+#contenido img { border: solid 1px #366;
+				margin:20px;
+				margin-right:5px;
+				margin-top:4px;
+				margin-bottom:5px;
+				float:left;
+				background-color: #0c4b52;
+				padding:2px;}
+#pie { background-image:url(imagenes/fondo_pie.png); width:600px; height:50px;}
+#contenido #texto{ margin:20px 0px;
+	margin-right:20px;
+	margin-top:10px;
+	margin-bottom:10px;
+		height:160px;
+		color: #FFF;
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:10px;}

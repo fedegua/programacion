@@ -1,0 +1,1 @@
+﻿package  {		import flash.display.MovieClip;			public class Chau extends MovieClip {						public function Chau() {			this.x = 210;			this.y = 220;		}	}	}

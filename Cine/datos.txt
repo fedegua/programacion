@@ -1,0 +1,17 @@
+color fondo: #0c4b52
+
+fuente menú: Georgia, 18 px, en itálica y negrita
+
+color letra menú: #aec68e
+
+color fondo menú cuando cursor está encima: #aec68e
+
+subtítulos de nota: h4, Georgia y color #FC3
+
+color subrayado subtítulos: #FF6
+
+fuente nota: Verdana, 10 px.
+
+color marco de imagen: #0c4b52
+
+color borde marco de imagen: #366

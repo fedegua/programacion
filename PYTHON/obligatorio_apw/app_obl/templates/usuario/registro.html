@@ -1,0 +1,26 @@
+{% extends "main/base_front.html" %}
+{% block body %}
+	{{ block.super }}
+	<div align="center"> <h1> Registro de usuario {{tel}}</h1> </div>
+	<form id="form1" name="form1" method="post" action="/usuario/registro/">
+	{% csrf_token %}
+		<div align="center">
+		{%if msg%}
+			<p> {{msg}}</p>
+		{%endif%}
+		 {% if form.non_field_errors %}
+			{% for error in form.non_field_errors %}
+			   <p> {{error}} </p>
+			{% endfor %}   
+		 {% endif %}     
+		
+		{% if form.telefono.errors %}
+			{% for error in form.telefono.errors %}
+			   <p> {{error}} </p>
+			{% endfor %}   
+		 {% endif %}     
+		<label> Telefono: {{ form.telefono }} </label>
+		<input type="submit" name="button" id="button" value="Enviar" />
+		</div>
+	</form>
+{% endblock %}

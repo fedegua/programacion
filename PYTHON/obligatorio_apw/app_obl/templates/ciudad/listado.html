@@ -1,0 +1,36 @@
+{% extends "main/base_front.html" %}
+{% block body %}
+	{{ block.super }}
+    {% if err %}
+     	{{err_desc}}	
+    {% endif %}  
+	<div align = "right" style="margin-right:6px">
+		{% include 'main/buscador.html' %}
+	<div>
+        <table id="cont" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th id="titulo">Nombre de cuidad</th>
+          </tr>
+          {# En ciudades tengo una lista de diccionarios#}
+          {% for ciudad in ciudades %}
+            <tr align="center">
+                <td><a href="/candidatos/{{ciudad.id}}">{{ciudad.nombre}}</a></td>
+            </tr>
+          {% endfor %}
+          
+          <tr align="center">
+                <td>
+                
+                {% if ciudades.has_previous %}
+                	<a href= "javascript:buscar({{ ciudades.previous_page_number }}, 'form1', '{{request.path}}')">Anterior</a>
+                {% endif %}
+                Pagina {{ciudades.number}} de {{ciudades.paginator.num_pages}}
+                
+                 {% if ciudades.has_next %}
+                	<a href= "javascript:buscar({{ ciudades.next_page_number }}, 'form1', '{{request.path}}')">Siguiente</a>
+                {% endif %}
+                </td>
+            </tr>
+        </table>
+{% endblock %}
+

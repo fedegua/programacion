@@ -1,0 +1,203 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { background-color: #000;
+		margin:0px}
+#instrucciones{background-image: url(Imagenes/instrPNG.png);
+	height:245px;
+width:90px;
+float:left;}
+#recuadro2, #recuadro { background-image:url(Imagenes/fondoAlerta.png);
+			background-repeat:repeat;
+			width:100%;
+			height:100%;
+			position:absolute;
+			top:0px;
+			bottom:0px;}
+#inst{ margin:auto;
+		margin-top:100px;
+		width:500px;
+		height:500px;
+		background-color: #CC0;
+		border:3px #960 solid;}
+#puntajeRecuadro h1, #inst h1 { margin:10px auto;
+			font:"Trebuchet MS", Arial, Helvetica, sans-serif;
+			text-decoration:underline;
+			color: #5B5B00;
+			text-align:center;}
+#inst p { width:350px;
+			margin:15px auto;
+			font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+			text-align:justify;
+			}
+#insAceptar { margin:0px 200px;
+				background-color:#000;
+				border:solid 1px #960;
+				color:#CC0;
+				font-weight:bold;
+				font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+
+#puntajeBoton { background-image: url(Imagenes/puntajePNG.png);
+				width:90px;
+				height:180px;
+				float:left;
+				margin-top:240px;
+				margin-left:-90px;}
+				
+#puntajeRecuadro{ width:300px;
+				  height:250px;
+				  margin:200px auto;
+				  background-color:#CC0;
+				  border:3px #960 solid;
+				  }
+#puntajeRecuadro ul{ width:150px;
+					margin:20px auto;
+					font:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:17px;}	
+#puntajeRecuadro li strong { text-decoration:underline;}			  
+#puntajeAceptar	{ margin:10px 120px;
+				background-color:#000;
+				border:solid 1px #960;
+				color:#CC0;
+				font-weight:bold;
+				font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}			 
+	
+
+.todo{ width:800px; 
+		margin:0px auto;
+		background-color:#030;
+		border:double #836A0A 20px;
+		overflow:auto;}
+#aviso{ width:600px;
+		margin-left:90px;
+		margin-top:30px;
+		border: double 5px #FFF;
+		color: #FFF;
+		font-size:36px;
+		text-align:center;
+		padding:10px;}
+#aviso p { font-size:12px; margin-top:5px;
+			text-align:left;
+			float:left}
+#aviso span { margin-left:10px;
+				text-align:left;
+				float:left; }
+#dados{ width:600px; 
+		height:80px;
+		margin:50px 65px; 
+		border: double #836A0A 20px;
+		padding:20px;
+		}				
+/*.dado{ margin:0px 20px;
+		background-image:url(1.gif);
+		background-repeat:no-repeat;
+		width:80px;
+		height:80px;
+		float:left;}-->*/
+img{ width:80px;
+	 height:80px;}
+#dado1{ margin:0px 18px; 
+		width:80px;
+		height:80px;
+		float:left;}
+#dado2{ margin:0px 18px; 
+		width:80px;
+		height:80px;
+		float:left;}	
+#dado3{ margin:0px 18px; 
+		width:80px;
+		height:80px;
+		float:left;}
+#dado4{ margin:0px 18px; 
+		width:80px;
+		height:80px;
+		float:left;}				
+#dado0{ margin:0px 18px; 
+		width:80px;
+		height:80px;
+		float:left;}
+.tira{	margin-top:20px;
+		margin-left:325px;
+		margin-bottom:100px;
+		width:158px; }
+#tirar { 	
+		width:159px; 
+		font-size:24px;
+		font-style:inherit; 
+		font-family: "Comic Sans MS", cursive; 
+		color:#CCC; 
+		background-image: url(Imagenes/boton.jpg); 
+		background-repeat:no-repeat; 
+		height:65px;
+		border:none;}
+#tiradas, #puntaje{ margin-left:20px; width:150px; height:70px;
+		}
+ 
+#tiradas p, #puntaje p{ color:#993;
+			font-size:25px;
+			float:left;
+			}
+#tiradasI, #puntajeI { width:40px;
+			margin-top:25px;
+			margin-left:10px;
+			font-size:18px;
+			font-weight:bold;
+			text-align:center;}
+
+#botones { width:600px;
+			margin-left:100px;
+			float:left;
+			}
+.boton{ 	margin-top:0px;
+			margin-left:50px;
+			margin-bottom:50px;
+			margin-right:20px;
+			background-image:url(Imagenes/boton2.jpg);																							    		font-size:24px;
+			font-style:inherit; 
+			font-family: "Comic Sans MS", cursive; 
+			color:#CCC; 
+			background-repeat:no-repeat; 
+			width:216px;
+			height:67px;
+			border:none;
+			}
+#fondoAlerta{ width:100%; height:100%; position:absolute; background-image:url(Imagenes/fondoAlerta.png); background-repeat:repeat; top:0px; bottom:0px; }
+#alerta2{margin:100px auto; 	
+		width:472px;
+		height:144px;
+		padding:20px;
+			}	
+#alerta {background-image: url(Imagenes/fondo.png) ;
+		background-repeat:repeat-y;
+		margin:100px auto; 	
+		width:472px;
+		height:144px;
+		padding:20px;}		
+ #alerta #alertaTexto { text-align:center;
+		font-size:24px; font-family:"Comic Sans MS", cursive;
+		margin-top:30px;
+		font-weight:bold;
+		}
+#puntajeFinal{ width:40px;
+				height:25px;
+				float:right;
+				margin-top:-25px;
+				margin-right:95px;
+				 font-size:24px;
+				font-weight:bold;
+				color:#FFF;}
+#alerta2 #alertaTexto{ font-size:24px;
+						margin-bottom:0px;
+						font-family:"Comic Sans MS", cursive;
+						color:#FFF;}
+#alerta2 p { font-size:24px;
+			font-weight:bold;
+			text-align:center;
+			color:#FFF;}
+#alerta2 #aceptar{ margin:0px 200px}
+#alerta #si{ margin-left:100px ;
+			margin-bottom:20px;
+				width:90px;}
+#alerta #no{margin-left:100px;
+			margin-bottom:20px;
+			width:90px}
+

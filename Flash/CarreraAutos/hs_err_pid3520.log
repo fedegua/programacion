@@ -1,0 +1,60 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (0xc0020001), pid=3520, tid=4756
+#
+# JRE version: 6.0_30-b12
+# Java VM: Java HotSpot(TM) Client VM (20.5-b03 mixed mode, sharing windows-x86 )
+# Problematic frame:
+# C  [KERNEL32.dll+0x1c83b]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0c6c1400):  JavaThread "Thread-1" daemon [_thread_in_native, id=4756, stack(0x06b00000,0x06c00000)]
+
+siginfo: ExceptionCode=0xc0020001, ExceptionInformation=0x8007042b 
+
+Registers:
+EAX=0x06bfed3c, EBX=0x34655690, ECX=0x00000001, EDX=0x00000000
+ESP=0x06bfed3c, EBP=0x06bfed8c, ESI=0x005d1da8, EDI=0x0c6c1400
+EIP=0x763fc83b, EFLAGS=0x00000206
+
+Top of Stack: (sp=0x06bfed3c)
+0x06bfed3c:   c0020001 00000001 00000000 763fc83b
+0x06bfed4c:   00000001 8007042b 0c6c1400 393126a0
+0x06bfed5c:   071da9a0 0c6c1400 3941c430 387bd9b0
+0x06bfed6c:   06bfeda8 0943878e 06bfed88 39313338
+0x06bfed7c:   06bfedd4 0943878e 06bfed98 6d826e26
+0x06bfed8c:   06bfeda8 7075b521 c0020001 00000001
+0x06bfed9c:   00000001 06bfeda4 8007042b 06bfedb8
+0x06bfedac:   706ea626 8007042b 34655690 06bfedd8 
+
+Instructions: (pc=0x763fc83b)
+0x763fc81b:   02 50 ff 75 14 8d 45 c4 50 e8 49 31 0a 00 e9 26
+0x763fc82b:   61 02 00 89 45 c0 8d 45 b0 50 ff 15 14 07 3f 76
+0x763fc83b:   c9 c2 10 00 66 83 fa 06 0f 84 cb 04 02 00 66 83
+0x763fc84b:   fa 09 75 0c c7 46 18 d8 21 00 00 e9 66 79 ff ff 
+
+
+Register to memory mapping:
+
+EAX=0x06bfed3c is pointing into the stack for thread: 0x0c6c1400
+EBX=0x34655690 is an oop
+{method} 
+ - klass: {other class}
+ECX=0x00000001 is an unknown value
+EDX=0x00000000 is an unknown value
+ESP=0x06bfed3c is pointing into the stack for thread: 0x0c6c1400
+EBP=0x06bfed8c is pointing into the stack for thread: 0x0c6c1400
+ESI=0x005d1da8 is an unknown value
+EDI=0x0c6c1400 is a thread
+
+
+Stack: [0x06b00000,0x06c00000],  sp=0x06bfed3c,  free space=1019k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)

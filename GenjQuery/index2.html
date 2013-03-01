@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Generala</title>
+    <script type='text/javascript' src='Generala.js'></script>
+	<script type='text/javascript' src='Dado.js'></script>
+	<script type='text/javascript' src='jquery-min_1.6.js'></script>
+	<script type='text/javascript' src='funciones.js'></script>
+
+	<link rel="stylesheet" type="text/css" href="estilos.css" media="screen" />
+</head>
+<body> 
+	<div id="instrucciones"></div>
+	<div id="recuadro" >
+		<div id="inst">
+        <h1> instrucciones del juego</h1>
+        <p> Para tirar los dados en la primer tirada de la mano se debe presionar el boton <strong>"tirar"</strong>. Luego, para la primer y segunda tirada, podra elegir entre seleccionar los dados que <strong>desea</strong> volver a tirar y presionar el boton <strong>"tirar"</strong>(se tiran solo los dados seleccionados), <strong>finalizar la mano </strong>(se contaran los puntos obtenidos segun la figura obtenida, y comenzara una nueva mano) o <strong>finalizar el juego</strong>  (se contraran los puntos obtenidos segun la figura obtenida, se mostrara el total de los puntos del juego y se le dara la opcion unica de reiniciar el juego, el puntaje vuelve a 0).</p>
+        <p>Luego de la tercera tirada, se contaran los puntos obtenidos segun la figura obtenida, y se le dara la opcion de comenzara una nueva mano o finalizar el juego.</p>
+         
+		<input type="button" value="aceptar" id="insAceptar" />
+		</div>
+	</div>
+    <div id="puntajeBoton"></div>
+	<div id="recuadro2" >
+		<div id="puntajeRecuadro">
+       		<h1> puntajes</h1>
+       		<ul>
+               	<li><strong>Generala:</strong> 5 puntos</li>
+                <li><strong>Poker:</strong> 4 puntos</li>
+                <li><strong>Foul:</strong> 3 puntos</li>
+                <li><strong>Escalera:</strong> 2 puntos</li>
+            </ul>
+            <input type="button" value="aceptar" id="puntajeAceptar" />
+       	</div>
+   	</div>
+
+<div class="todo">
+	 <div id="puntaje">
+  		<p> Puntaje :</p>
+        <input type="text" id="puntajeI"  readonly="readonly" />
+    </div> 
+    <div id="tiradas">
+  		<p> Tiradas :</p>
+        <input type="text" id="tiradasI"  readonly="readonly" />
+    </div>  
+	<div id="aviso"></div>
+	<div id="dados">
+    	<a href="#"><img src="Imagenes/c.gif" border="0" id= "dado0" /></a>     	
+        <a href="#"><img src="Imagenes/c.gif" border="0" id= "dado1" /></a>
+        <a href="#"><img src="Imagenes/c.gif" border="0" id= "dado2" /></a>
+		<a href="#"><img src="Imagenes/c.gif" border="0" id= "dado3" /></a>
+		<a href="#"><img src="Imagenes/c.gif" border="0" id= "dado4" /></a>
+    </div>	
+   <!--<img src="Imagenes/2.png" id= "dado2" />
+       <img src="Imagenes/4.png" id= "dado3" />
+    <img src="Imagenes/6.png" id= "dado4" />
+   <img src="Imagenes/1.png" id= "dado5" />-->
+	<div class="tira">
+		<input type="button" value="Tirar" id="tirar" />
+	</div>
+   <div id="alerta">
+    	<p id="alertaTexto">Fin mano, desea seguir jugando?</p>
+	    <input type="button" value="Si" id="si" />
+		<input type="button" value="No" id="no" />
+    </div>
+    <div id="alerta2">
+    	<p id="alertaTexto">Su puntaje fue :</p>
+        <div id="puntajeFinal"></div>
+        <p> Desea reiniciar el juego?</p>
+	    <input type="button" value="Aceptar" id="aceptar" />
+    </div>
+   
+    <div id="botones">
+		<input type="button" value="Fin de la mano" id="finMano" class="boton" />
+		<input type="button" value="Fin del juego" id="finJuego" class="boton" />
+	</div>
+    
+ </div>   
+
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>

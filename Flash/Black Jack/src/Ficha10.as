@@ -1,0 +1,1 @@
+﻿package  {	import flash.display.MovieClip;	/**	 * ...	 * @author ...	 */	public class Ficha10 extends MovieClip	{				public function Ficha10() 		{			this.x = 409			this.y = 553			/*			(440 y 400 y)			(370 a 410 x)			this.y = Math.random()*(440/100)+400;			this.x = Math.random()*(410/100)+370;*/		}			}}

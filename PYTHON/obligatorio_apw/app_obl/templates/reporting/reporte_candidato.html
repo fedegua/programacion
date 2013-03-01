@@ -1,0 +1,26 @@
+{% extends "main/base_front.html" %}
+{% block body %}
+	{{ block.super }}
+    <h1 id="titulo" align="center">Reporte por candidato en {{campania.nombre}}</h1>
+    {% if msg %}
+<h2 align="center">{{msg}}</h2>
+    {%else%}
+    <table width="27%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr id="titRep" align="center">
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Qty</th>
+        <th>Ciudad</th>
+      </tr>
+      {% for value in reporte %}
+      
+      <tr align="center">
+        <td>{{value.candidato.nombre}}</td>
+        <td>{{value.candidato.apellido}}</td>
+        <td>{{value.qfy}}</td>
+        <td>{{value.candidato.ciudad.nombre}}</td>
+      </tr>      
+      {% endfor%}
+    </table>
+    {%endif %}    
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<div id="content-main">
+	<div class="module" id="changelist">
+  		<h2>Reporte cantidad de votos por departamento para campa&ntilde;a {{campania.nombre}}</h2>
+		<div class="results">
+            <table width="100%">
+            <thead>
+                <tr>
+                <th>
+                   <div class="text">Departamento</div>
+                </th>
+                <th>   
+                   <div class="text">Cantidad</div>
+                </th>
+                </tr>
+             </thead>
+			 <tbody>
+                {% for value in reporte %}
+                <tr class="{% cycle 'row1' 'row2' %}">
+                	<td>{{value.ciudad.nombre}}</td>
+                    <td>{{value.qfy}}</td>
+                </tr>
+			{% endfor %}
+            </tbody>
+            </table>
+		</div>
+  	</div>
+</div>
+{% endblock %}

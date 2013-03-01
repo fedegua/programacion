@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*------------------------RESET--------------------------------*/
+
+html, body, div, span, applet, object, iframe, p, blockquote, pre,	a, abbr, acronym, address, big, cite, code,	del, dfn, em, font, img, ins, kbd, q, s, samp,	small, strike, strong, sub, sup, tt, var,	b, u, i, center,	dl, dt, dd, ol, ul, li,	fieldset, form, label, legend,	table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;	outline: 0;	font-size: 100%;	vertical-align: baseline;	margin-top: 10;	margin-right: 0;	margin-bottom: 10;	margin-left: 0;	padding-top: 0;	padding-right: 0;	padding-bottom: 0;	padding-left: 0;}
+	
+h1, h2, h3, h4, h5, h6{margin:0px; padding:0px;}
+	
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+:focus {outline: 0;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+table {border-collapse: collapse;border-spacing: 0;}
+/*-------Generales----------------------------*/
+body {	background:#E8E8E8;	margin:0;	padding:0;	font-family: Arial, Helvetica, sans-serif;	font-size:11px;} 
+
+a{	text-decoration:none;	font-weight:bold;	color:#333;}
+a:hover{text-decoration:underline;}
+.clear{clear:both; margin-top:20px}
+.clearmar{clear:both; }
+.right{text-align:right}
+button , input[type=submit], input[type=button]{text-transform:uppercase;font-size:10px;padding:3px;color:#fff;background:#4780ae;border-left:1px solid #084577;border-top:1px solid #084577;border-right:1px solid #7ab7e8;border-bottom:1px solid #7ab7e8;-moz-border-radius:3px;margin:3px;margin-top:5px;}
+.requerid{color:#F03; }
+/*-----------------------------------------------*/
+/*-----------Cabezal--------------------------------*/
+#header{	background-image: url(../img/cabezal_ES.jpg); margin-bottom:10px;height: 90px;	width: 95%;	margin-right: auto;	margin-left: auto;}
+#logo1{width:207px; height:66px;background-image: url(../img/LOGO1.jpg); background-repeat:no-repeat; margin-left:5%; float:left}
+#logo2{width:317px; height:66px;background-image: url(../img/LOGO2.jpg); background-repeat:no-repeat; margin-right:5%; float:right}
+
+#logo2 h1{	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;	font-size: 12px;	color:#8F2332; margin:25px 0 0 110px}
+#log{color: #FFF;	font-size: 11px; 	 text-align:right; margin-right:10px; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; padding: 40px 10px 0 0; clear:both;}
+#log a{margin-left:30px; color:#FC0; background-image: url(../img/logg_2x.png); background-repeat:no-repeat;padding-left: 18px; background-position:0px 1px}
+#cont_menu{	width: 1200px;	margin-right: auto;	margin-left: auto;}
+#menu {	float:left;	width:1200px;	background:#E8E8E8 url(../img/bg.gif) repeat-x bottom;	line-height:normal;      }
+#menu #menu_global, #hola {	margin:0px ;	list-style:none;	padding-top: 3px;	padding-right: 10px;	padding-bottom: 0;	padding-left: 0px;      }
+#menu #menu_global li,  #hola li {      float:left;      background:url(../img/left.gif) no-repeat left top;      margin:0px ;      padding:0px 0px 0px 9px;      }
+#menu #menu_global li a, #hola li a {	display:block;	background:url(../img/right.gif) no-repeat right top;	text-decoration:none;	font-weight:bold;	color:#333;	padding-top: 10px;	padding-right: 15px;	padding-bottom: 9px;	padding-left: 6px;	font-size: 12px;     }
+#menu #menu_global a:hover , #hola a:hover {      color:#333;      }	
+#menu #menu_global #activate, #hola #activate {      background-image:url(../img/left_on.gif);     }
+#menu #menu_global #activate a, #hola #activate a {	background-image:url(../img/right_on.gif);	color:#FFF;	padding-bottom:10px;      }
+#hola {margin-bottom: 40px;}
+.title{   padding-bottom:10px; border-bottom: 1px solid #8F2332;}
+.section h1{margin-top:10px; margin-bottom:0px; margin-left:5px; color:#8F2332 ; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; }
+.section h2{margin-top:7px; margin-bottom:0px; margin-left:5px; color:#003366; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:11px; color:#666; font-weight:normal}
+/*-----------------------------------------------*/
+#menu #det{	margin:0;	list-style:none;	padding-top: 0px;	padding-right: 10px;	padding-bottom: 10px;	padding-left: 0px;	border-left-width: 1px;	border-left-style: solid;	border-left-color: #333;}
+#menu #det li {	float:right;	margin:0;	padding-top: 10px;	padding-right: 5px;	padding-bottom: 0px; }
+#menu #det li a {	text-decoration:none;	font-weight:bold;	color:#333;	margin-top: 20px;	padding-right: 15px;		padding-left: 6px;	font-size: 11px;      }
+#menu #det li a:hover {	text-decoration: underline;}
+/*-------SUBTITULOS----------------------------------------*/
+#entityData{margin:5px 0px; padding:0px 0px 0px 10px; background-image:url(../img/information_16.png); background-repeat:no-repeat; overflow:auto; color:#333; padding-left:20px; background-position:0px 3px; margin-left:5px;}
+#entityData h3{ padding:0px 0px 0px 0px; margin:2px 0px 3px 0px; line-height:20px; font-weight:normal}
+#entityData a{ color:#036; font-weight:bold;}
+#entityData ul {margin:0px;}
+#entityData ul li{ margin:3px 0px 3px 0px;}
+/*-----------------------------------------------*/
+/*------------pie---------------------------------*/
+
+#footer{	width: 93%;	margin-top:10px; text-align:center;	margin-right: auto;	margin-left: auto;	background-color: #FFF;	overflow:auto;	border:1px solid #fff;	-moz-border-radius:7px 7px 7px 7px;	-webkit-border-radius:7px 7px 7px 7px;	border-radius:7px 7px 7px 7px;	font-size:9px;	line-height: 14px;	padding: 10px; margin-bottom:10px;}
+
+#credits{	width: 1180px;	margin-top:10px;	margin-right: auto;	margin-left: auto;	height: 20px;	padding-top: 0px;	padding-right: 10px;	padding-left: 10px;	font-size:9px;	text-align: right;}
+/*----------main------------------------------*/
+.section{	width: 93%;	clear:both;	margin-right: auto;	margin-left: auto;	background-color: #FFF;	overflow:auto;	padding: 0px 1% 20px 1%;	border:1px solid #fff;	-moz-border-radius:0px 0px 7px 7px;	-webkit-border-radius:0px 0px 7px 7px;	border-radius:0px 0px 7px 7px;}
+.section #cont_menu{	height:40px;	width: 100%;  border-bottom: 1px solid #8F2332;margin: 10px 0;}
+.section #menu_local{	float: right;    width: 38%;}
+.section #det{	margin:0px;	list-style:none;	padding-top: 3px;	padding-right: 10px;	padding-bottom: 10px;	padding-left: 0px;}
+.section #det li {	float:right;	margin:0px;	padding-top: 15px;padding-right: 0px;padding-bottom: 1px;	padding-left: 10px; } 
+.section #det li a {	text-decoration:none;	font-weight:bold;	color:#333;	margin-top: 20px;	padding-right: 15px;	padding-left: 9px;	font-size: 10px;      }
+/*------------iconos-----------------------------------*/
+#delete{	background-image:url(../img/delete_16.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;	}
+#update{	background-image:url(../img/tick_16.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;	}
+#new{	background-image:url(../img/plus_16.png);	background-repeat: no-repeat;	padding-left: 20px;background-position:0px 10px;}
+#print{	background-image:url(../img/print_16.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#anexo{	background-image:url(../img/anex_16.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#list{	background-image:url(../img/document_16.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#incumbencies{	background-image:url(../img/incumbencies_16.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#initial_quota{	background-image:url(../img/cuposInicial_16.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#quota{	background-image:url(../img/cupos_16.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#sign{	background-image:url(../img/sign_16.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#view_sign{	background-image:url(../img/view_sign_16.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#acuerdos{	background-image:url(../img/acuerdos_16.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#down{	background-image:url(../img/down_16.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#movement{	background-image:url(../img/movement_16.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#certificate{	background-image:url(../img/emitir_16.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#cancel{	background-image:url(../img/anular_16.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#suracept{	background-image:url(../img/surplus_accept.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#surreject{	background-image:url(../img/surplus_reject.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#surnotificacion{	background-image:url(../img/surplus_notificacion.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#calendar{	background-image:url(../img/continuar.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#csv{	background-image:url(../img/csv.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+#calendar_back{	background-image:url(../img/back.png);	background-repeat: no-repeat;	padding-left: 20px;	background-position:0px 10px;}
+
+
+/*--------------BUSQUEDA---------------------------------*/
+#filterResults{	 float: left;    font-weight: bold;    padding-left: 10px;    text-align: left;    width: 60%;}
+.section table.empty{width: 1180px; vertical-align:middle; 	}
+.section table.empty, .section table.empty th, .section table.empty tr, .section table.empty td{	border:none;	border-collapse:collapse; border-spacing:0px;	}
+.section #filterResults input[type="text"]{ margin-right:10px;font-family: Arial, Helvetica, sans-serif;	font-size: 12px;	width: 15%;}
+.section #filterResults #search{ margin-right:10px;font-family: Arial, Helvetica, sans-serif;	font-size: 12px;	width: 25%;}
+.section #filterResults label{ padding:0px 5px 0px 5px;font-weight:bold; text-transform:capitalize;  }
+.section #filterResults #buscar{ font-size:12px; color:#036; background-image: url(../img/search_16.png);	background-repeat: no-repeat;	background-position: 0px center; padding:3px 10px 3px 20px;}
+.section #filterResults h2{margin:5px 5px 10px 5px; color: #036; font-size:14px}
+
+
+/*--------------PAGINACION---------------------------------*/
+.pagination{width:100%;	text-align: right;	margin: 30px 0px 10px 0px;	padding-right: 10px;}
+.bt_paginas{text-transform:uppercase;font-size:10px;padding:5px;color:#fff;background:#4780ae;border-left:1px solid #084577;border-top:1px solid #084577;border-right:1px solid #7ab7e8;border-bottom:1px solid #7ab7e8;-moz-border-radius:3px;margin:3px;margin-top:5px;}
+/*--------------TABLAS---------------------------------*/
+.section table.listado{clear:both;	width: 100%;	border:1px solid #ccc;	border-collapse:collapse;	border-spacing:0px;		}
+.section table.listado2{	width: 1180px;	border:1px solid #ccc;	border-collapse:collapse;	border-spacing:0px;		}
+.section table.listado td, .section table.listado th{	border:1px solid #ccc;	padding-top: 5px;	padding-bottom: 5px;	padding-left:4px; padding-right:4px;}
+.section table.listado2 td, .section table.listado2 th{		padding-top: 5px;	padding-bottom: 5px; padding-left:3px; padding-right:0px;border-bottom:1px solid #ccc }
+
+.section table.listado th, .section table.listado2 th{	background-color: #CCC;	height:15px;	color:#333;	text-align: left;	padding-left:5px; }
+.section table.listado td a, .section table.listado2 td a{color:#036;}
+.check{width:20px;}
+.iconos{width:75px; }
+.fecha2{ width:105px}
+.fecha3{ width:70px}
+.porcentaje{ width:50px; }
+.porcentaje2{ width:30px; }
+.valores{ width:50px}
+/*--------------ORDENACION TABLAS---------------------------------*/
+.asc{    background-image: url(../img/order_asc.png);    background-position: right;    background-repeat: no-repeat;    }
+.desc{    background-image: url(../img/order_desc.png);    background-position: right;    background-repeat: no-repeat;}
+
+
+/*-----------MENSAJES DE ERROR---------------------------------------*/
+.section #messages{	width: 99%;clear:both; 	margin:5px 0px 5px 0px;text-align: left;-moz-border-radius:7px 7px 7px 7px;-webkit-border-radius:7px 7px 7px 7px;	border-radius:7px 7px 7px 7px;		}
+.section #messages2{	width: 200px;float: left; 	margin:5px 0px 10px 5px;	}
+
+.wait{	border:1px solid #AEDB4C;	color: #fff;	font-family:"Arial", Arial, sans-serif;	font-size:11px;	font-weight:bold;	padding:8px 5px 8px 5px;	-moz-border-radius:3px;	-webkit-border-radius: 3px;	background-color: #6C9;}
+.appMsg_1{width:30% ;border:1px solid #AEDB4C;color: #415539; font-family:"Arial", Arial, sans-serif;font-size:11px;background:#CCE297;font-weight:bold;padding:8px 5px 8px 5px;-moz-border-radius:3px;-webkit-border-radius: 3px;}
+.userError { margin-bottom:10px;border:1px solid #C82923;color:#C82923;font-family:"Arial", Arial, sans-serif;font-size:11px;font-weight:700;background:#E7928D;padding:8px 5px 8px 5px;-moz-border-radius:3px;-webkit-border-radius: 3px;}
+.appMsg_2 {border:1px solid #AF2D25;color: #fff;font-family:"Arial", Arial, sans-serif;font-size:11px;font-weight:700;background:#AF2D25;padding:8px 5px 8px 5px;-moz-border-radius:3px;-webkit-border-radius: 3px;}
+.warning{	border:1px solid #8F8143;	color:#8F8143;	font-family:"Arial", Arial, sans-serif;	font-size:11px;	font-weight:700;	background-color:#FFFF82;	padding:8px 5px 8px 5px;	-moz-border-radius:3px;	-webkit-border-radius: 3px;}
+.appMsg{	border:1px solid #036;	color:#036;	font-family:"Arial", Arial, sans-serif;	font-size:11px;	font-weight:700;	background-color:#fff;	padding:8px 5px 8px 5px;	-moz-border-radius:3px;	-webkit-border-radius: 3px;}
+
+/*-----------login---------------------------------------*/
+#title.login {overflow:hidden; padding-top:40px; padding-bottom:50px; margin:10 auto; line-height:25px; font-size:18px; font;text-align:center; color:#CCC}
+
+#login{background:url(../img/security.jpg) #fff 250px 255px no-repeat;padding-left:10px;}
+#login #messages{	width: 270px;float: left; 	margin:5px 5px 5px 0px;	}
+#reset_pwd{ height:100px; }
+#login label, #reset_pwd label {display:block;width:100px;float:left; margin:7px 0px;}
+
+#login #loginform .bt{margin-top:10px; clear:both;}
+#login #loginform #Login{ float:right; margin-right:10px;}
+#login #resetp{ margin-top:10px; float:left;}
+
+#login #usr, #login #pwd, #reset_pwd #user, #reset_pwd #mail{ margin:3px 7px 3px 0px; float: right}
+div#login {width:300px; height:270px ;margin: 10px auto; border:1px solid #fff; -moz-border-radius:7px;-webkit-border-radius: 7px; padding-top:30px; text-align:left;padding-left:10px; background-color:#FFF; padding-bottom:10px;}
+
+div#reset_pwd{width:300px; height:170px ;margin: 10px auto; border:1px solid #fff; -moz-border-radius:7px;-webkit-border-radius: 7px; padding-top:30px; text-align:left;padding-left:10px; background-color:#FFF; padding-bottom:10px;}
+div#reset_pwd{padding-right:10px;}
+div#reset_pwd p{text-align:center; margin-top:0px; line-height:14px}
+#change_pwd{width:400px; height:150px ;margin: 10px auto; border:1px solid #fff; -moz-border-radius:7px;-webkit-border-radius: 7px; padding-top:30px; text-align:left;padding-left:10px; background-color:#FFF; clear:both}
+#change_pwd label {display:block;width:120px;float:left; margin:7px 0px;}
+#change_pwd #pwd1, change_pwd #pwd2{ margin:3px 0px; clear:both; }
+
+#login #resetPwd , #reset_pwd #cancellog {margin-left:5px;}
+#reset_pwd .bt{ text-align:right; margin-right:20px; margin-bottom:5px; clear:both}
+
+#login .info_div, #reset_pwd .info_div{margin-top:30px; font-size:10px;}
+
+
+a#passwordrecoverylink{font-size:10px;text-decoration:underline;display:block;text-align:right;color:#999;}
+a:hover#passwordrecoverylink{color:#000;}
+
+#login input#remember{margin:10px 5px 0px 10px;}
+
+#captchaId{height:20px; width:200px}
+
+/*---------------------FORMULARIOS--------------*/
+.datos_form{width:300px; padding-left:10px; font-weight:bold; }
+table{		border:1px solid #ccc;	border-collapse:collapse;	border-spacing:0px;	border:none;	}
+table.datos {width:100%}
+table.datos td{		padding-top: 5px;	padding-bottom: 5px;	padding-left:10px ;  }
+table.datos .sup{	vertical-align:top}
+table.datos td.tamanio{ width:70px}
+table.datos th{	background-color: #CCC;	height:15px;	color:#333;	text-align: left;	padding-left:5px;}
+table.datos tr{ border-bottom:1px solid #ccc; font-weight:bold;}
+table.datos tr.botones{ border-bottom:none; text-align:right;}
+table.datos tr.izq{ border-bottom:none; text-align:left;}
+table.listado tr.botones{ border-bottom:none; text-align:right;}
+
+.section #dateUserSolo {border:1px solid #ccc;-moz-border-radius:3px;-webkit-border-radius: 3px; width:50%;  margin-left:auto; margin-right:auto;   padding:10px;}
+.section #dateUserSolo2{border:1px solid #ccc;-moz-border-radius:3px;-webkit-border-radius: 3px; width:450px;  margin-left:auto; margin-right:auto;   padding:10px;}
+.section #dateUserSolo3{border:1px solid #ccc;-moz-border-radius:3px;-webkit-border-radius: 3px; width:1010px;  margin-left:auto; margin-right:auto;   padding:10px;}
+.section #dateUserSolo4{border:1px solid #ccc;-moz-border-radius:3px;-webkit-border-radius: 3px; width:1010px;  margin-left:auto; margin-right:auto;   padding:10px;}
+.section #dateUserSolo5 {border:1px solid #ccc;-moz-border-radius:3px;-webkit-border-radius: 3px; width:530px;  margin-left:auto; margin-right:auto;   padding:10px;}
+.section #dateUserSolo6 {border:1px solid #ccc;-moz-border-radius:3px;-webkit-border-radius: 3px; width:285px;  margin-left:auto; margin-right:auto;   padding:10px;}
+
+#dateUser table.datos label, #dateUserSolo table.datos label, #dateUserSolo3 table.datos label, #dateUserSolo4 table.datos label{ width:80%; line-height:15px; display:block;}
+#dateUserSolo2 table.datos label{ width:170px; line-height:15px; display:block;}
+#dateUserSolo2 table.datos label{ width:100px; line-height:15px; display:block;}
+#dateUserSolo5 table.datos label{ width:330px; line-height:15px; display:block;}
+#dateUser table.datos label.check{  display:inline; margin: 0 20px 0 0;}
+#dateUser table.datos input[type=checkbox]{margin:3px 7px}
+#dateUser table.datos input[type=text], #dateUserSolo table.datos input[type=text], #dateUserSolo3 table.datos input[type=text], #dateUserSolo4 table.datos input[type=text], #dateUser table.datos  input[type=password]{width:90%; font-size:12px; font-family: Arial, Helvetica, sans-serif; padding:5px}
+#dateUser  table.datos  select, #dateUserSolo table.datos  select, #dateUserSolo3 table.datos  select, #dateUserSolo4 table.datos select{width:93%; font-size:12px;font-family: Arial, Helvetica, sans-serif;padding:5px}
+#dateUser  table.datos  optgroup, #dateUserSolo table.datos  optgroup, #dateUserSolo3 table.datos  optgroup, #dateUserSolo4 table.datos optgroup{ font-style:normal; border-bottom:1px solid #ccc; margin:5px0px 0px  0px; padding:5px 0px; font-size:11px; }
+#dateUserSolo table.datos option{padding:2px 0px; font-size:12px;}
+#dateUser table.datos textarea{width:92%; height:100px; font-size:12px; font-family: Arial, Helvetica, sans-serif;}
+
+.estado{ width:50px;border: solid 1px #999999; text-transform: uppercase; padding: 5px; margin-bottom:10px; margin-right:20px;float:right; text-align:center; background-color:#333; color:#FFF; font-weight:bold }
+.section #dateUser{border:1px solid #ccc;-moz-border-radius:3px;-webkit-border-radius: 3px; width:96;   padding:2%; margin-bottom:20px}
+.section .derecha{ float:right;width:49%  }
+.section .izquierda{float:left;;width:49%; }
+
+
+#dateUser table.datos input[type=text].fecha, #dateUserSolo table.datos input[type=text].fecha,  #dateUserSolo3 table.datos input[type=text].fecha{width:241px; font-size:12px;}
+.section #dateUserSolo3 table.datos textarea, .section #dateUserSolo4 table.datos textarea{ width:730px; height:60px; font-family: Arial, Helvetica, sans-serif;	font-size:12px; padding:5px}
+.section #dateUserUpdateL{border:1px solid #ccc;-moz-border-radius:3px;-webkit-border-radius: 3px; width:365px;   float:left; padding:10px; margin-right:10px;}
+.section #dateUserUpdateR{border:1px solid #ccc;-moz-border-radius:3px;-webkit-border-radius: 3px; width:365px;   float:right; padding:10px;}
+.section #dateUserUpdate{border:1px solid #ccc;-moz-border-radius:3px;-webkit-border-radius: 3px; width:365px;   padding:10px; }
+
+#dateUser legend, #dateUserSolo legend, #dateUserSolo2 legend, #dateUserSolo3 legend, #dateUserUpdate legend, #dateUserUpdateL legend, #dateUserUpdateR legend, #dateUserUpdate legend, #dateUserSolo5 legend, #dateUserSolo6 legend { padding:5px 10px;font-size:16px; font-weight:bold; color: #036}
+
+#dateUserUpdate table.datos input[type=text], #dateUserUpdate table.datos input[type=password] {width:220px; font-size:12px;}
+#dateUserUpdate  table.datos  select, #dateUserUpdateL table.datos select{width:223px; font-size:12px;}
+#dateUserUpdate table.datos label{ width:120px; line-height:15px; display:block;}
+
+#dateUserUpdateR table.datos .num{width:120px; text-align:right}
+#dateUserUpdateR table.datos label{ width:270px; line-height:15px; display:block;}
+
+#dateUserUpdateL table.datos input[type=text], #dateUserUpdateL table.datos input[type=password]{width:220px; font-size:12px}
+#dateUserUpdateL table.datos label{ width:120px; line-height:15px; display:block;}
+
+#createNCA{float:left; margin-right:10px}
+
+.center{ margin-left:100px;}
+
+
+.ui-autocomplete-loading { background: white url('../img/loader.gif') right center no-repeat; }
+
+
+/*------------------------PDF--------------------------------*/
+.listado_pdf{	width: 100%;	border:1px solid #ccc;	border-collapse:collapse;	border-spacing:20px;	}
+.listado_pdf td, .listado_pdf th{	border:1px solid #ccc;	padding-top: 5px;	padding-bottom: 5px;	padding-left:3px;}
+.listado_pdf th{	background-color: #CCCCCC;	height:15px;	color:#333;	text-align: left;	padding-left:10px; text-transform:capitalize}
+.nonegrita{ font-weight:normal; width:100px}
+label.paratabla{width:100px}
+
+/*------------------------menu iconos--------------------------------*/
+table.table_menu{ margin:20px auto 0px auto}
+table.table_menu td{  text-align:center;}
+table.table_menu td .icon{border:1px solid #ccc; margin:0px 2px }
+table.table_menu td .icon span{margin-bottom:10px; display:block}
+table.table_menu td .icon a{color:#000; font-weight:normal}
+table.table_menu td .icon a:hover{color:#09F; font-weight:normal; text-decoration:none}
+table.table_menu td .icon:hover{border:1px solid #999; }
+table.table_menu td img{margin:10px 20px; display:block}
+table.table_menu td.borde{}
+
+
+
+
